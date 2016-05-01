@@ -4,8 +4,8 @@ app.run(['$anchorScroll', function($anchorScroll) {
   	$anchorScroll.yOffset = 120;
 }]);
 
-app.controller('appController', ['$scope', '$http', '$timeout', 'Upload', 
-	function ($scope, $http, $timeout, Upload) {
+app.controller('appController', ['$scope', '$http', '$timeout', 
+	function ($scope, $http, $timeout) {
 		$scope.amount = 0;
 		$scope.price = 25;
 		$scope.transport = 25;
