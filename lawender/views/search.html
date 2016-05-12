@@ -1,0 +1,33 @@
+<nav-bar></nav-bar>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="height:300px;">
+  <!-- Indicators -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active" style="height:300px;">
+      <div class="slider-image" style="background: url('images/contract3.jpg') 50% 50% no-repeat;background-size: cover;
+      height:300px;">
+        <div class="carousel-caption" style="top: 10% !important;">
+          <h1>ค้นหาและร่างสัญญามากมายได้อย่างง่ายดาย</h1>
+        </div>
+        <search search-text="searchText"></search>
+      </div>
+    </div>
+  </div>
+</div><!-- /.carousel -->
+
+<div class="container">
+  	<div class="row contract-list" style="padding:20px 20px;position:relative;" ng-repeat="c in contracts" ng-click="selectContract()">
+	    <div class="col-sm-4 text-center">
+	    	<img src="images/paper.png" style="width:200px;height:250px;"/>
+		</div>
+		<div class="col-sm-8">
+			<h2>{{c.display}}</h2>
+			<p>
+				When life changes, often your ownership in a property will change with it. You can use a Quit Claim Deed to transfer real property to a family member, former spouse or when you need to place property in a trust. With a Quit Claim Deed, you can make the change official. Once everything's settled, you can move in or move on for a new beginning.
+			</p>
+		</div>
+		<div class="start-button" style="position:absolute;bottom:10px;right:10px;">
+			<input type="button" class="btn btn-lg" value="เริ่มต้น"/>
+		</div>
+	</div>
+</div>

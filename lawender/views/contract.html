@@ -1,0 +1,44 @@
+<nav-bar></nav-bar>
+
+<div style="width:100%;height:100%;">
+	<div style="float:left;width:50%;height:100%;overflow-y:scroll;">
+		<div style="width:100%;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<h3>ข้อมูลสัญญา</h3>
+					</div>
+				</div>
+				<div class="row" style="margin-top:20px;">
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label>ชื่อ-นามสกุลผู้ทำสัญญา</label>
+				        	<input type="text" class="form-control" ng-model="contract.name">
+				        </div>
+				        <div class="form-group">
+							<label>อายุผู้ทำสัญญา</label>
+				        	<input type="text" class="form-control" ng-model="contract.age">
+				        </div>
+				        <div class="form-group">
+							<label>ที่อยู่ผู้ทำสัญญา</label>
+				        	<input type="text" class="form-control" ng-model="contract.address">
+				        </div>
+				        <div class="form-group">
+							<label>วันเกิดผู้ทำสัญญา</label>
+				        	<input type="text" class="form-control" ng-model="contract.birthDate">
+				        </div>
+				        <div class="form-group">
+				        	<input type="button" class="btn" value="Print" ng-click="printContract()"/>
+				        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="float:right;width:50%;height:100%;padding: 0;overflow: hidden;">
+		<div style="width:100%;height:100%;">
+			<iframe ng-src="{{contractUrl}}" name="contractFrame" class="contract-frame"
+			style="width:133.33%;height:133.33%;overflow-y:scroll;overflow-x:hidden;"></iframe>
+		</div>
+	</div>
+</div>
