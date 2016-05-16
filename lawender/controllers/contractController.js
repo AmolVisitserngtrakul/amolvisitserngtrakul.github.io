@@ -1,8 +1,8 @@
 var app = angular.module("app");
 
-app.controller('contractController', ['$scope', '$routeParams', '$q', 'contractService',
-	function ($scope, $routeParams, $q, contractService) {
-		$scope.query = $routeParams.query;
+app.controller('contractController', ['$scope', '$state', '$q', 'contractService',
+	function ($scope, $state, $q, contractService) {
+		$scope.query = $state.params.query;
 		$scope.id = parseInt($scope.query);
 		$scope.searchText = $scope.query;
 

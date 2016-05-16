@@ -1,8 +1,8 @@
 var app = angular.module("app");
 
-app.controller('searchController', ['$scope', '$routeParams', '$q', 'contractService', '$location',
-	function ($scope, $routeParams, $q, contractService, $location) {
-		$scope.query = $routeParams.query;
+app.controller('searchController', ['$scope', '$state', '$q', 'contractService', '$location',
+	function ($scope, $state, $q, contractService, $location) {
+		$scope.query = $state.params.query;
 		$scope.id = parseInt($scope.query);
 		$scope.searchText = $scope.query;
 		$scope.contracts = [];
