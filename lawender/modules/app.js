@@ -45,7 +45,7 @@ angular.module('app', ['loginService', 'ngAnimate', 'app.root', 'ngMaterial'])
   // };
   $scope.loginMe = function () {
     // setup promise, and 'working' flag
-    var loginPromise = $http.post('/api/authen/login', $scope.login);
+    var loginPromise = $http.post('api/authen/login.php', $scope.login);
     $scope.login.working = true;
     $scope.login.wrong = false;
 

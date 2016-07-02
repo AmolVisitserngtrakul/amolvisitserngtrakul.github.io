@@ -35,6 +35,7 @@ angular.module('app.root', ['ui.router']).config(function ($stateProvider) {
     .state('app.contract', {
       url: '/contract/:query',
       templateUrl: 'views/contract.html',
-      controller: 'contractController'
+      controller: 'contractController',
+      //accessLevel: accessLevels.user
     });
 });

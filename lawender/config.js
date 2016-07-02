@@ -1,3 +1,3 @@
 var config = {
-	rootUrl: 'http://amolvisitserngtrakul.github.io/lawender/'
+	rootUrl: 'http://localhost/amolvisitserngtrakul.github.io/lawender/'
 };

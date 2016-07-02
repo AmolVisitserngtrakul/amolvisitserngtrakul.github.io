@@ -11,6 +11,14 @@ app.service('contractService', function ($http, $q) {
 		});
 	};
 
+	self.saveData = function (data) {
+		return $http.post('api/contract/saveData.php', data);
+	};
+
+	self.getData = function (id) {
+		return $http.post('api/contract/getData.php', id);
+	};
+
 	self.promise = self.getContracts();
 
 	return self;
