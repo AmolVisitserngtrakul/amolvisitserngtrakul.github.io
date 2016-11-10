@@ -8,12 +8,17 @@
     		<h3>{{ service }}</h3>
     	</div>
     	<div class="row" style="padding:10px 10px;" ng-repeat="s in services">
-    		<div class="col-md-3 text-center">
-				<img src="" style="width:150px;height:150px;"/>
+    		<div class="col-md-4 text-center">
+				<img src="./images/spa2.jpg" style="width:200px;height:150px;float:left;"/>
 			</div>
-			<div class="col-md-9">
-				<p><b>Massage1</b></p>
-				<p>Massage1 Massage1 Massage1 Massage1 Massage1Massage1 Massage1 Massage1 Massage1 Massage1Massage1 Massage1 Massage1 Massage1 Massage1Massage1 Massage1 Massage1 Massage1 Massage1Massage1 Massage1 Massage1 Massage1 Massage1Massage1 Massage1 Massage1 Massage1 Massage1</p>
+			<div class="col-md-8">
+				<p><b>Day Spa</b></p>
+				<p>
+					สู่สุนทรียะแห่งการผ่อนคลาย ระดับพรีเมี่ยมใจกลางกรุงเทพ
+				</p>
+				<p>
+					ราคา: 400 บาท
+				</p>
 				<div>
 					<div style="float:left;padding-top:3px;width:50px;">
 						<p>จำนวน</p>
@@ -28,8 +33,8 @@
 					</div>
 					<div style="float:left;padding-left:20px;">
 						<button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false" autocomplete="off"
-						style="width:120px;">
-					        Engage
+						style="width:120px;" ng-click="confirmEngage()">
+					        จอง
 						</button>
 					</div>
 				</div>

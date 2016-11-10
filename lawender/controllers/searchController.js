@@ -22,7 +22,7 @@ app.controller('searchController', ['$scope', '$state', '$q', 'contractService',
 		});
 
 		$scope.selectContract = function (id) {
-			$location.path('/contract/1');
+			$location.path('/contract/' + id);
 		};
 	}
 ]);

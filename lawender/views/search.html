@@ -16,7 +16,7 @@
 </div><!-- /.carousel -->
 
 <div class="container">
-  	<div class="row contract-list" style="padding:20px 20px;position:relative;" ng-repeat="c in contracts" ng-click="selectContract()">
+  	<div class="row contract-list" style="padding:20px 20px;position:relative;" ng-repeat="c in contracts" ng-click="selectContract(c.id)">
 	    <div class="col-sm-4 text-center">
 	    	<img src="images/paper.png" style="width:200px;height:250px;"/>
 		</div>

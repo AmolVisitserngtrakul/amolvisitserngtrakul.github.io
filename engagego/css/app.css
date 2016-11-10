@@ -9,6 +9,15 @@ body {
 	border-bottom: 1px solid #D2D6DF;
 }
 
+.bottom {
+  height: 50px;
+  width: 100%;
+  border-top: 1px solid #D2D6DF;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -23,4 +32,13 @@ body {
   text-align: center;
   -webkit-filter: opacity(75%);
   filter: opacity(75%);
+}
+
+.user-information-container {
+  background-color: #f2f5f9;
+  border:0;
+}
+
+.text-center {
+  text-align: center;
 }

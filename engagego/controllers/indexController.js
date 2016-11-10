@@ -22,7 +22,9 @@ app.controller('indexController', ['$scope', '$location',
 		}, 5000);
 
 		$scope.search = function () {
-			$location.path('/engage/massage');
-		}
+			$location.path('/engage/สปา');
+		};
+
+		$scope.recommend = [0,1,2,3,4,5];
 	}
 ]);

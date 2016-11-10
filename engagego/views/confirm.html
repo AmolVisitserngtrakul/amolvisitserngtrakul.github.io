@@ -1,0 +1,54 @@
+<br/>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<div style="padding:10px 10px;">
+				<h1>รายละเอียดบริการ</h1>
+				<h3>นวดแผนไทย 2 ชั่วโมง สำหรับ 2 ท่าน</h3>
+				<h3>วันที่ 1 ธันวาคม 2559 เวลา 17.00</h3>
+				<h3>เดย์สปา กรุงเทพฯ</h3>
+				<h3>ราคา: 400 บาท</h3>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="user-information-container" style="padding:10px 10px;">
+				<h1>ข้อมูลผู้จองใช้บริการ</h1>
+				<form>
+					<div class="form-group">
+						<label for="name">ชื่อ</label>
+						<input type="text" class="form-control" id="name" ng-model="name">
+					</div>
+					<div class="form-group">
+						<label for="pwd">เบอร์โทรศัพท์</label>
+						<input type="text" class="form-control" id="phone" ng-model="phone">
+					</div>
+					<div class="form-group">
+						<label for="email">อีเมลล์</label>
+						<input type="email" class="form-control" id="email" ng-model="email">
+					</div>
+					<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">ยืนยันการจอง</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">ทำการจองสำเร็จ</h4>
+      </div>
+      <div class="modal-body">
+        <p>ระบบทำการส่งอีเมลล์ข้อมูลการจองไปที่เมลล์ {{email}}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>

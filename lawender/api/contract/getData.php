@@ -6,18 +6,26 @@
 		$request = json_decode($postdata);
 
 		$db = new db();
-		$response = array();
+		$response;
+		//$response = array();
 
-		$strSQL = "SELECT * FROM `contract_data` WHERE contract = ".intval($request->id);
+		$strSQL = "SELECT * FROM `contract` WHERE id = ".intval($request->id);
 		$objQuery = $db->query($strSQL);
 
-		while($objResult = mysql_fetch_array($objQuery))
-		{
-			$data = new stdClass();
-			$data->field = $objResult['field'];
-			$data->value = $objResult['value'];
-			$response[] = $data;
+		while($objResult = mysql_fetch_array($objQuery)) {
+			$response = $objResult['data'];
 		}
+
+		// $strSQL = "SELECT * FROM `contract_data` WHERE contract = ".intval($request->id);
+		// $objQuery = $db->query($strSQL);
+
+		// while($objResult = mysql_fetch_array($objQuery))
+		// {
+		// 	$data = new stdClass();
+		// 	$data->field = $objResult['field'];
+		// 	$data->value = $objResult['value'];
+		// 	$response[] = $data;
+		// }
 
 		$db->close();
 		echo json_encode($response);

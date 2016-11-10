@@ -8,15 +8,18 @@
 		$db = new db();
 		$response = array();
 
-		$strSQL = "DELETE FROM `contract_data` WHERE contract = ".intval($request->contract);
-		$db->query($strSQL);
+		// $strSQL = "DELETE FROM `contract_data` WHERE contract = ".intval($request->contract);
+		// $db->query($strSQL);
 
-		foreach ($request->data as &$value) {
-		    $strSQL = "INSERT INTO `contract_data`(`contract`, `field`, `value`) VALUES ";
-			$strSQL .="(".intval($request->contract).", '".$value->field."', '".mysql_real_escape_string($value->value)."') ";
-			$db->query($strSQL);
-			$response[] = $strSQL;
-		}
+		// foreach ($request->data as &$value) {
+		//     $strSQL = "INSERT INTO `contract_data`(`contract`, `field`, `value`) VALUES ";
+		// 	$strSQL .="(".intval($request->contract).", '".$value->field."', '".mysql_real_escape_string($value->value)."') ";
+		// 	$db->query($strSQL);
+		// 	$response[] = $strSQL;
+		// }
+
+		$strSQL = "INSERT INTO `contract`(`data`) VALUES ('".mysql_real_escape_string($request->data)."')";
+		$db->query($strSQL);
 
 		$db->close();
 		echo json_encode($strSQL);

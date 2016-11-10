@@ -7,6 +7,10 @@ function($routeProvider) {
     templateUrl: 'views/engage.html',
     controller: 'engageController'
   })
+  .when('/confirm/:service', {
+    templateUrl: 'views/confirm.html',
+    controller: 'confirmController'
+  })
   .otherwise({
     templateUrl: 'views/index.html',
     controller: 'indexController'

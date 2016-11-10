@@ -22,9 +22,10 @@
     <div style="float:left;width:180px;position:relative;">
       <select class="form-control">
         <option value="">กรุณาเลือกประเภทบริการ</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
+        <option>สปา</option>
+        <option>สนามฟุตบอล</option>
+        <option>สนามแบดมินตัน</option>
+        <option>คาราโอเกะ</option>
       </select>
       <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
     </div>
@@ -38,51 +39,54 @@
     <div style="float:left;width:130px;position:relative;">
       <select class="form-control">
         <option value="">กรุณาเลือกเวลา</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
+        <option>6.00</option>
+        <option>7.00</option>
+        <option>8.00</option>
+        <option>9.00</option>
+        <option>10.00</option>
+        <option>11.00</option>
+        <option>12.00</option>
+        <option>13.00</option>
+        <option>14.00</option>
+        <option>15.00</option>
+        <option>16.00</option>
+        <option>17.00</option>
+        <option>18.00</option>
+        <option>19.00</option>
+        <option>20.00</option>
+        <option>21.00</option>
+        <option>22.00</option>
+        <option>23.00</option>
+        <option>24.00</option>
       </select>
       <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
     </div>
     <div style="float:left;">
       <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false" autocomplete="off"
       style="width:120px;" ng-click="search()">
-        Search
+        ค้นหา
       </button>
+    </div>
+  </div>
+</div>
+<br/>
+<br/>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12" style="border-bottom: 1px solid #D2D6DF;">
+      <h1>Recommend</h1>
     </div>
   </div>
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-xs-6 col-lg-4">
-      <h2>Heading</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-    </div><!--/.col-xs-6.col-lg-4-->
-    <div class="col-xs-6 col-lg-4">
-      <h2>Heading</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-    </div><!--/.col-xs-6.col-lg-4-->
-    <div class="col-xs-6 col-lg-4">
-      <h2>Heading</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-    </div><!--/.col-xs-6.col-lg-4-->
-    <div class="col-xs-6 col-lg-4">
-      <h2>Heading</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-    </div><!--/.col-xs-6.col-lg-4-->
-    <div class="col-xs-6 col-lg-4">
-      <h2>Heading</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-    </div><!--/.col-xs-6.col-lg-4-->
-    <div class="col-xs-6 col-lg-4">
-      <h2>Heading</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-    </div><!--/.col-xs-6.col-lg-4-->
-  </div><!--/row-->
+    <div ng-repeat="r in recommend" class="col-xs-6 col-lg-4">
+      <div class="text-center"><h2>Day Spa</h2></div>
+      <div class="text-center"><img src="./images/spa2.jpg" style="height:150px;"/></div>
+      <div>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <p><a class="btn btn-default" href="#" role="button">อ่านเพิ่ม »</a></p>
+      </div>
+    </div>
+  </div>
 </div>
