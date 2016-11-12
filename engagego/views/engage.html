@@ -7,38 +7,40 @@
     	<div>
     		<h3>{{ service }}</h3>
     	</div>
-    	<div class="row" style="padding:10px 10px;" ng-repeat="s in services">
-    		<div class="col-md-4 text-center">
-				<img src="./images/spa2.jpg" style="width:200px;height:150px;float:left;"/>
-			</div>
-			<div class="col-md-8">
-				<p><b>Day Spa</b></p>
-				<p>
-					สู่สุนทรียะแห่งการผ่อนคลาย ระดับพรีเมี่ยมใจกลางกรุงเทพ
-				</p>
-				<p>
-					ราคา: 400 บาท
-				</p>
-				<div>
-					<div style="float:left;padding-top:3px;width:50px;">
-						<p>จำนวน</p>
-					</div>
-					<div style="float:left;">
-						<select class="form-control" style="width:100px;">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-						</select>
-					</div>
-					<div style="float:left;padding-left:20px;">
-						<button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false" autocomplete="off"
-						style="width:120px;" ng-click="confirmEngage()">
-					        จอง
-						</button>
+    	<div class="row" style="padding:10px 10px;">
+    		<div class="col-sm-6 col-md-12" ng-repeat="s in services" style="padding: 20px 20px;">
+    			<div class="col-md-4 text-center">
+					<img src="./images/spa2.jpg" style="width:200px;height:150px;"/>
+				</div>
+				<div class="col-md-8" style="padding-left: 30px;">
+					<p><b>Day Spa</b></p>
+					<p>
+						สู่สุนทรียะแห่งการผ่อนคลาย ระดับพรีเมี่ยมใจกลางกรุงเทพ
+					</p>
+					<p>
+						ราคา: 400 บาท
+					</p>
+					<div>
+						<div style="float:left;padding-top:3px;width:50px;">
+							<p>จำนวน</p>
+						</div>
+						<div style="float:left;">
+							<select class="form-control" style="width:100px;">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							</select>
+						</div>
+						<div style="float:left;padding-left:20px;">
+							<button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false" autocomplete="off"
+							style="width:120px;" ng-click="confirmEngage()">
+						        จอง
+							</button>
+						</div>
 					</div>
 				</div>
-			</div>
+    		</div>
     	</div>
     </div>
   </div>

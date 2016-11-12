@@ -10,12 +10,34 @@ body {
 }
 
 .bottom {
-  height: 50px;
   width: 100%;
   border-top: 1px solid #D2D6DF;
   margin-top: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.bottom input, .bottom button {
+  border-radius: 0;
+  -webkit-appearance: none;
+  height: 40px;
+}
+
+.bussiness-link {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bussiness-link:hover {
+  color: black;
+}
+
+img.img-app-footer {
+    width: auto;
+    height: 44px;
+    margin-top: 5px;
+    border-radius: 5px;
 }
 
 /* CUSTOMIZE THE CAROUSEL

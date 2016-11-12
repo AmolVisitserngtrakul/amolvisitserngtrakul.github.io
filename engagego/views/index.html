@@ -9,6 +9,35 @@
     top:14px;
     right:5px;
   }
+
+  @media all and (max-width: 845px) {
+    .search-container > .search > div > input,
+    .search-container > .search > div > select,
+    .search-container > .search > div > button {
+      width: 380px;
+    }
+  }
+
+  @media all and (min-width: 846px) {
+    .search-container > .search > div {
+      float:left;
+    }
+    .search-container #service {
+      width:180px;
+    }
+    .search-container #location {
+      width:280px;
+    }
+    .search-container #date {
+      width:130px;
+    }
+    .search-container #time {
+      width:130px;
+    }
+    .search-container #search {
+      width:120px;
+    }
+  }
 </style>
 <div class="carousel" ng-style="carouselImage">
   <div class="search" style="display:inline-block;">
@@ -17,10 +46,10 @@
     </div>
   </div>
 </div>
-<div style="width:100%;text-align: center;padding-top: 20px;">
+<div class="search-container" style="width:100%;text-align: center;padding-top: 20px;">
   <div class="search" style="display:inline-block;">
-    <div style="float:left;width:180px;position:relative;">
-      <select class="form-control">
+    <div style="position:relative;">
+      <select class="form-control" id="service">
         <option value="">กรุณาเลือกประเภทบริการ</option>
         <option>สปา</option>
         <option>สนามฟุตบอล</option>
@@ -29,15 +58,15 @@
       </select>
       <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
     </div>
-    <div style="float:left;width:280px;">
-      <input type="text" class="form-control" placeholder="กรุณาระบุเมืองหรือสถานที่" />
+    <div>
+      <input type="text" class="form-control" placeholder="กรุณาระบุเมืองหรือสถานที่" id="location" />
     </div>
-    <div style="float:left;width:130px;position:relative;">
-      <input type="text" class="form-control" placeholder="กรุณาระบุวันที" />
+    <div style="position:relative;">
+      <input type="text" class="form-control" placeholder="กรุณาระบุวันที" id="date"/>
       <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
     </div>
-    <div style="float:left;width:130px;position:relative;">
-      <select class="form-control">
+    <div style="position:relative;">
+      <select class="form-control" id="time">
         <option value="">กรุณาเลือกเวลา</option>
         <option>6.00</option>
         <option>7.00</option>
@@ -61,9 +90,9 @@
       </select>
       <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
     </div>
-    <div style="float:left;">
+    <div>
       <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false" autocomplete="off"
-      style="width:120px;" ng-click="search()">
+      id="search" ng-click="search()">
         ค้นหา
       </button>
     </div>
@@ -80,7 +109,7 @@
 </div>
 <div class="container">
   <div class="row">
-    <div ng-repeat="r in recommend" class="col-xs-6 col-lg-4">
+    <div ng-repeat="r in recommend" class="col-sm-6 col-md-4">
       <div class="text-center"><h2>Day Spa</h2></div>
       <div class="text-center"><img src="./images/spa2.jpg" style="height:150px;"/></div>
       <div>
