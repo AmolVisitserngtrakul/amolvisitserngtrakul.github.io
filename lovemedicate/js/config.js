@@ -1181,10 +1181,12 @@ function runStep(__this){
 					showResponseMsg(data.error.code,data.error.variable);
 				});
 			}else if($currentStep.table == "photo"){
-				if(checkImage()){
-					showHideLoading(true);
-					$('#uploadForm').submit();
-				}
+				showHideLoading(false);
+				$('#uploadForm').submit();
+				// if(checkImage()){
+				// 	showHideLoading(true);
+				// 	$('#uploadForm').submit();
+				// }
 			}else if($currentStep.table == "sys_user" && $currentStep.column=="gender"){
 				delete args.cty_id;
 				esy_registeParam.gender = args.gender;
